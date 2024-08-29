@@ -7,21 +7,27 @@
 <body>
     <h4>FORM</h4>
     <form method="POST" action="gambar.html">
-        <input type="text" name="var1" size="30" value="Enter your name here."><br><br>
-        <input type="text" name="var1" size="30" value="Enter your address here"><br><br>
+        <input type="text" name="name" size="30" placeholder="Enter your name here."><br><br>
+        <input type="text" name="address" size="30" placeholder="Enter your address here"><br><br>
         <b>Are you a student?</b>
-        <input type="checkbox" name="var3"><br><br>
+        <input type="checkbox" name="isStudent"><br><br>
         <b>How old are you?</b><br>
-        <input type="radio" name="var4" value="r1">10 - 15<br>
-        <input type="radio" name="var4" value="r2">16<br>
-        <input type="radio" name="var4" value="r3">21<br><br>
+        <input type="radio" name="age" value="10-15">10 - 15<br>
+        <input type="radio" name="age" value="16">16<br>
+        <input type="radio" name="age" value="21">21<br><br>
         <b>Which one do you have?</b> <br>
-        <input type="checkbox" name="vehicle1" value="Bike" checked> I have a plane<br>
-        <input type="checkbox" name="vehicle1" value="Bike" > I have a bike<br>
-        <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
-        <input type="checkbox" name="vehicle3" value="Boat"> I have a boat<br><br>
-        <input type="submit" name="var5" value="Send">
-        <input type="reset" name="var6" value="Clear">
+        <input type="checkbox" name="vehicle" value="plane" checked> I have a plane<br>
+        <input type="checkbox" name="vehicle" value="bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle" value="car"> I have a car<br>
+        <input type="checkbox" name="vehicle" value="boat"> I have a boat<br><br>
+        <b>Where are you from?</b><br>
+        <select name="country">
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="USA">USA</option>
+        </select><br><br>
+        <input type="submit" name="submit" value="Send">
+        <input type="reset" name="reset" value="Clear">
     </form>
 </body>
 

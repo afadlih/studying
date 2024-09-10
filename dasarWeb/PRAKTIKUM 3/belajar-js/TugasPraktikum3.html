@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form Praktikum 3</title>
+    <script>
+        function validateForm() {
+            var firstName = document.forms["nameForm"]["firstName"].value;
+            var lastName = document.forms["nameForm"]["lastName"].value;
+            if (firstName == "" || lastName == "") {
+                alert("Mohon isi nama depan dan nama belakang.");
+                return false;
+            }
+            document.getElementById("result").innerHTML = "Nama: " + firstName + " " + lastName;
+            return false; 
+        }
+    </script>
+</head>
+<body>
+    <form name="nameForm" onsubmit="return validateForm()">
+        <label for="firstName">Nama Depan:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="lastName">Nama Belakang:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+    <div id="result"></div>
+</body>
+</html>

@@ -58,4 +58,29 @@ foreach ($nilaiSiswa as $nilai) {
     echo "Nilai: $nilai (Lulus) <br>";
 }
 
+    //Soal Cerita 4.6 
+    echo "<br><br>";
+    echo "Soal Cerita 4.6 <br><br>";
+    $nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+    
+    // Urutkan nilai dari yang terkecil ke yang terbesar
+    sort($nilaiSiswa);
+    
+    // Hapus dua nilai terendah
+    array_shift($nilaiSiswa);
+    array_shift($nilaiSiswa);
+    
+    // Hapus dua nilai tertinggi
+    array_pop($nilaiSiswa);
+    array_pop($nilaiSiswa);
+    
+    // Hitung total nilai yang tersisa
+    $totalNilai = array_sum($nilaiSiswa);
+    
+    // Hitung rata-rata nilai
+    $rataRataNilai = $totalNilai / count($nilaiSiswa);
+    
+    echo "Total nilai setelah mengabaikan dua nilai tertinggi dan dua nilai terendah adalah: $totalNilai<br>";
+    echo "Nilai rata-rata adalah: $rataRataNilai";
+
 ?>

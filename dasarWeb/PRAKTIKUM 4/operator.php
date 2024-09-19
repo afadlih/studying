@@ -44,4 +44,26 @@ echo "Hasil AND (a dan b) = $hasilAnd <br>";
 echo "Hasil OR (a atau b) = $hasilOr <br>";
 echo "Hasil NOT (a) = $hasilNotA <br>";
 echo "Hasil NOT (b) = $hasilNotB <br>";
+
+echo "<br><br>Hasil dari Operator Penugasan a = $a dan b = $b <br><br>";
+
+$a += $b;
+echo "Hasil tambah (a += b) = $a <br>";
+
+$a = 10;
+$a -= $b;
+echo "Hasil kurang (a -= b) = $a <br>";
+
+$a = 10;
+$a *= $b;
+echo "Hasil kali (a *= b) = $a <br>";
+
+$a = 10;
+$a /= $b;
+echo "Hasil bagi (a /= b) = $a <br>";
+
+$a = 10;
+$a %= $b;
+echo "Hasil modulus (a %= b) = $a <br>";
+
 ?>

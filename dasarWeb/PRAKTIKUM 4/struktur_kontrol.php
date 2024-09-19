@@ -1,15 +1,15 @@
 <?php
 echo "Struktur Kontrol <br><br>";
 $nilaiNumerik = 92;
-if($nilaiNumerik >= 90 && $nilaiNumerik <= 100){
+if ($nilaiNumerik >= 90 && $nilaiNumerik <= 100) {
     echo "Nilai huruf A";
-} elseif($nilaiNumerik >= 80 && $nilaiNumerik < 90){
+} elseif ($nilaiNumerik >= 80 && $nilaiNumerik < 90) {
     echo "Nilai huruf B";
-} elseif($nilaiNumerik >= 70 && $nilaiNumerik < 80){
+} elseif ($nilaiNumerik >= 70 && $nilaiNumerik < 80) {
     echo "Nilai huruf C";
-} elseif($nilaiNumerik < 70){
+} elseif ($nilaiNumerik < 70) {
     echo "Nilai huruf D";
-} 
+}
 
 echo "<br><br>";
 $jarakSaatIni = 0;
@@ -33,6 +33,18 @@ $jumlahBuah = 0;
 for ($i = 1; $i <= $jumlahLahan; $i++) {
     $jumlahBuah += ($tanamanPerLahan * $buahPerTanaman);
 }
-
 echo "Jumlah buah yang akan dipanen adalah: $jumlahBuah";
-?>  
+
+echo "<br><br>";
+echo "Perulangan Foreach<br>";
+$skorUjian = [85, 92, 78, 96, 88];
+$totalSkor = 0;
+
+foreach ($skorUjian as $skor) {
+    $totalSkor += $skor;
+}
+
+echo "Total skor ujian adalah: $totalSkor";
+
+
+?>

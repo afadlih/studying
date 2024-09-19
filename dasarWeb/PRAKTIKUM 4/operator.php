@@ -73,4 +73,16 @@ $hasilTidakIdentik = $a !== $b;
 echo "<br><br>Hasil dari Operator Identik a = $a dan b = $b <br><br>";
 echo "Hasil (a) identik dengan (b) = $hasilIdentik <br>";
 echo "Hasil (a) tidak identik dengan (b) = $hasilTidakIdentik <br>";
+
+//Soal Cerita soal 3.6
+echo "<br><br>Soal Cerita soal 3.6 <br><br>";
+$totalKursi = 45;
+$kursiTerisi = 28;
+echo "Total kursi di restoran adalah $totalKursi <br>";
+echo "Jumlah kursi yang terisi di restoran adalah $kursiTerisi <br>";
+$kursiKosong = $totalKursi - $kursiTerisi;
+$persenKursiKosong = ($kursiKosong / $totalKursi) * 100;
+
+echo "Persentase kursi yang masih kosong di restoran adalah $persenKursiKosong%";
 ?>
+</body>

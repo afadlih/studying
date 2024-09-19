@@ -100,5 +100,15 @@ echo "Harga produk sebelum diskon: Rp $hargaProduk<br>";
 echo "Diskon yang diberikan: Rp $diskon<br>";
 echo "Harga yang harus dibayar setelah diskon: Rp $hargaSetelahDiskon";
 
+//Soal Cerita 4.8
+echo "<br><br>";
+echo "Soal Cerita 4.8 <br><br>";
+$poin = 550; // Contoh poin yang dikumpulkan oleh pemain
+
+$totalSkor = $poin;
+$hadiahTambahan = ($poin > 500) ? "YA" : "TIDAK";
+
+echo "Total skor pemain adalah: $totalSkor<br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? $hadiahTambahan";
 
 ?>

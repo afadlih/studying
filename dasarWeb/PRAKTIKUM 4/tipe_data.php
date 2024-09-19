@@ -51,5 +51,8 @@ echo 'Nama Belakang: ' . $namaBelakang . '<br>';
 echo "<br>";
 echo $namaLengkap;
 
-//
+//Tipe Data Array
+echo "<br><br>";
+$listMahasiswa = ["Wahid Abdullah", "Elmo Bachtiar", "Lendis Fabri"];
+echo $listMahasiswa[0];
 ?>

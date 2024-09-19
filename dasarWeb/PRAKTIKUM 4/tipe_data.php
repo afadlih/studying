@@ -38,4 +38,18 @@ var_dump($apakahSiswaLulus);
 echo "<br>";
 var_dump($apakahSiswaSudahUjian);
 
+//Tipe Data String
+echo "<br><br>";
+$namaDepan = "Ahmad Fadlih";
+$namaBelakang = 'Wahyu Sardana';
+
+$namaLengkap = "{$namaDepan} {$namaBelakang}";
+$namaLengkap2 = $namaDepan . ' ' . $namaBelakang;
+echo "<br>";
+echo "Nama Depan: {$namaDepan} <br>";
+echo 'Nama Belakang: ' . $namaBelakang . '<br>';
+echo "<br>";
+echo $namaLengkap;
+
+//
 ?>

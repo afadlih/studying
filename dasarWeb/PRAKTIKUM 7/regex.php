@@ -30,4 +30,12 @@ if (preg_match($pattern, $text, $matches)) {
 } else {
     echo "Tidak ada yang cocok!";
 }
+
+echo"<br><br>";
+$pattern = '/appl?e/';
+$text = 'I like apple pie. I like apple pie.';
+$new_text = preg_replace($pattern, 'banana', $text);
+echo $new_text; // Output: I like banana pie. I like banana pie.
+
+
 ?>

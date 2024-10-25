@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+}
+
+.btn-warning:hover {
+    background-color: #e68900;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-danger:hover {
+    background-color: #da190b;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.form-control {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+}
+
+
+#confirmModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#confirmModal .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#confirmModal .modal-content h2 {
+    margin-bottom: 20px;
+}
+
+#confirmModal .modal-content .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#confirmModal .modal-content .btn-confirm {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#confirmModal .modal-content .btn-cancel {
+    background-color: #6c757d;
+    color: #fff;
+}
